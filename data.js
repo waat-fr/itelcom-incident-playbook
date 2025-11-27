@@ -166,11 +166,11 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur : Cause possible -> Impossible de déplacer le moteur de verrouillage pendant l’autotest."
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Demander si l'on entend un bruit au niveau du moteur de verrouillage, si oui: maintenance nécessaire.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si toujours inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Demander si l'on entend un bruit au niveau du moteur de verrouillage, si oui: maintenance nécessaire, transmettre N2, le préciser dans le ticket.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si toujours inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -214,10 +214,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule : Cause possible -> Mesure de sécurité ; le véhicule consomme plus d’énergie qu’autorisé/ le véhicule n’a pas réduit l’énergie à temps selon la norme IEC 61851."
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -239,10 +239,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule : Cause possible -> Câble connecté pendant plus de 2 minutes sans démarrage d’une session de recharge."
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -275,10 +275,10 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur : Cause possible -> Impossible de verrouiller le câble de recharge."
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -526,10 +526,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule : Description de l’erreur (EV_ISSUES) -> Défaut de communication avec un véhicule Mode 3 / T2 (erreur « CP » : Pilote de contrôle)."
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -540,10 +540,10 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur : Description de l’erreur ◊Etat du câble incorrect (la valeur de la résistance de codage « PP » est erronée)."
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si toujours inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si toujours inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -554,10 +554,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule : Description de l’erreur -> Court-circuit de défaut de charge sur fil pilote de contrôle (CPW)."
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -568,11 +568,11 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur : Description de l’erreur (Prise) -> Manipulation incorrecte lors du branchement/ débranchement de la prise ou le moteur bloqué."
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Demander si l'on entend un bruit au niveau du moteur de verrouillage, si oui: maintenance nécessaire.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si toujoursinefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Demander si l'on entend un bruit au niveau du moteur de verrouillage, si oui: maintenance nécessaire, transmettre N2, le préciser dans le ticket.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si toujours inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -616,10 +616,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule : Description de l’erreur (VENTILATION_NOT_ ALLOWED) -> Risque de fuite de gaz des batteries. Voiture demandant une ventilation incompatible avec nos produits"
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -702,10 +702,10 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur"
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si toujours inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si toujours inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -716,10 +716,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule"
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -802,10 +802,10 @@ window.STATION_FAULTS_DATA = {
             "Erreur de communication avec le véhicule."
           ],
           "process": [
-            "Vérifier que le câble soit correctement connecté.",
-            "Essayer avec un autre véhicule/ câble.",
-            "Si inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-Vérifier que le câble soit correctement connecté.",
+            "-Essayer avec un autre véhicule/ câble.",
+            "-Si inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         },
         {
@@ -838,10 +838,10 @@ window.STATION_FAULTS_DATA = {
             "Échec du verrouillage du connecteur"
           ],
           "process": [
-            "S'assurer que le câble soit compatible et bien enclenché.",
-            "Tenter de déverrouiller le câble à distance.",
-            "Si toujours inefficace, faire un redémarrage de la borne.",
-            "Si le problème persiste: Transmettre N2."
+            "-S'assurer que le câble soit compatible et bien enclenché.",
+            "-Tenter de déverrouiller le câble à distance.",
+            "-Si toujours inefficace, faire un redémarrage de la borne.",
+            "-Si le problème persiste: Transmettre N2."
           ]
         }
       ]
