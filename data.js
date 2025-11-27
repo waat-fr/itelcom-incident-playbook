@@ -12,7 +12,7 @@ window.STATION_FAULTS_DATA = {
             "Erreur interne : Cause possible -> Erreur générale inconnue."
           ],
           "process": [
-            "Transmettre N2"
+            "Transmettre N1"
           ]
         },
         {
