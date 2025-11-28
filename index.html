@@ -4,132 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Itelcom - Checklists codes erreur</title>
-    <style>
-        :root {
-            color-scheme: light dark;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #35628f;
-            color: #ffffff;
-            margin: 0;
-            padding: 40px 20px 60px;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            width: min(960px, 100%);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        p.subtitle {
-            text-align: center;
-            margin-bottom: 32px;
-        }
-
-        .controls {
-            display: grid;
-            gap: 16px;
-            background: rgba(0, 0, 0, 0.15);
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        label {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font-weight: bold;
-        }
-
-        select {
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 8px;
-            border: none;
-            background: #ffffff;
-            color: #1d1d1d;
-        }
-
-        select:disabled {
-            background: #e2e2e2;
-            color: #7a7a7a;
-            cursor: not-allowed;
-        }
-
-        .panel {
-            margin-top: 32px;
-            padding: 24px;
-            border-radius: 12px;
-            background: rgba(0, 0, 0, 0.35);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .panel.hidden {
-            display: none;
-        }
-
-        .panel h2 {
-            margin-top: 0;
-        }
-
-        .panel-section + .panel-section {
-            margin-top: 16px;
-        }
-
-        ol, ul {
-            margin: 0;
-            padding-left: 24px;
-        }
-
-        .status {
-            margin-top: 16px;
-            font-style: italic;
-            text-align: center;
-        }
-    </style>
+    <link rel="icon" href="https://cdn.waat.fr/wp-content/uploads/2025/10/cropped-W4-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://cdn.waat.fr/wp-content/uploads/2025/10/cropped-W4-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://cdn.waat.fr/wp-content/uploads/2025/10/cropped-W4-180x180.png">
+    <meta name="msapplication-TileImage" content="https://cdn.waat.fr/wp-content/uploads/2025/10/cropped-W4-270x270.png">    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#e9f1f9',
+                            100: '#c9dcf1',
+                            200: '#a3c5e8',
+                            300: '#78abde',
+                            400: '#4c8fd3',
+                            500: '#35628f',
+                            600: '#2c5175',
+                            700: '#25425f',
+                            800: '#1d3349',
+                            900: '#142337'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
 </head>
-<body>
-    <div class="container">
-        <h1>Itelcom - Checklists codes erreur</h1>
-        <p class="subtitle">Choisissez une marque, puis un code erreur pour afficher la checklist correspondante.</p>
+<body class="min-h-screen bg-slate-100 text-slate-900">
+    <header class="w-full bg-white shadow-lg">
+        <div class="mx-auto flex max-w-5xl items-center gap-4 px-6 py-4 text-brand-900">
+            <img src="logo-waat.png" alt="Logo Waat" class="h-14 object-contain drop-shadow-lg">
+            <span class="h-12 border-l border-gray-200"></span>
+            <div>
+                <h1 class="text-2xl font-semibold leading-tight text-[#0f6b8a]">Itelcom - Checklists codes erreur</h1>
+                <p class="text-sm text-brand-700">Choisissez une marque, puis un code erreur pour afficher la checklist correspondante.</p>
+            </div>
+        </div>
+    </header>
 
-        <div class="controls" aria-live="polite">
-            <label for="brandSelect">
-                Fabricant
-                <select id="brandSelect" disabled>
+    <main class="mx-auto w-full max-w-5xl px-6 py-8">
+        <div class="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <label for="brandSelect" class="flex flex-col gap-2 text-sm font-semibold">
+                <span class="text-slate-700">Fabricant</span>
+                <select
+                    id="brandSelect"
+                    disabled
+                    class="h-12 rounded-xl border border-gray-200 bg-white px-4 text-brand-900 shadow-sm transition focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-300 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400"
+                >
                     <option value="">Chargement des fabricants...</option>
                 </select>
             </label>
-            <label for="modelSelect">
-                Code erreur / modèle
-                <select id="modelSelect" disabled>
+            <label for="modelSelect" class="flex flex-col gap-2 text-sm font-semibold">
+                <span class="text-slate-700">Code erreur / modèle</span>
+                <select
+                    id="modelSelect"
+                    disabled
+                    class="h-12 rounded-xl border border-gray-200 bg-white px-4 text-brand-900 shadow-sm transition focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-300 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400"
+                >
                     <option value="">Sélectionnez d'abord un fabricant</option>
                 </select>
             </label>
         </div>
 
-        <section class="panel hidden" id="errorPanel">
-            <h2 id="panelTitle"></h2>
-            <div class="panel-section" id="panelLabel"></div>
-            <div class="panel-section">
-                <h3>Description</h3>
-                <div id="panelDescription"></div>
-            </div>
-            <div class="panel-section">
-                <h3>Process</h3>
-                <div id="panelProcess"></div>
+        <section class="mt-8 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm" id="errorPanel">
+            <header class="flex items-start justify-between gap-4 border-b border-slate-200 bg-slate-50 px-6 py-5">
+                <div class="space-y-1">
+                    <h2 class="text-2xl font-semibold text-slate-900" id="panelTitle"></h2>
+                    <div class="text-sm text-slate-500" id="panelLabel"></div>
+                </div>
+                <span id="panelBadge" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-700">Code</span>
+            </header>
+            <div class="space-y-6 px-6 py-6">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-lg font-semibold text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                        <h3 class="text-lg font-semibold text-slate-900">Description</h3>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-800" id="panelDescription"></div>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-lg font-semibold text-emerald-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <h3 class="text-lg font-semibold text-slate-900">Procédure à suivre</h3>
+                    </div>
+                    <div id="panelProcess"></div>
+                </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <script src="data.js"></script>
     <script>
@@ -162,11 +130,52 @@
                 container.textContent = 'Non renseigné.';
                 return;
             }
-            const list = document.createElement(ordered ? 'ol' : 'ul');
+
+            if (ordered) {
+                const list = document.createElement('ol');
+                list.className = 'space-y-3';
+                items.forEach((text, index) => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm';
+
+                    const badge = document.createElement('span');
+                    badge.className = 'flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-brand-50 text-sm font-semibold text-brand-700';
+                    badge.textContent = index + 1;
+
+                    const content = document.createElement('div');
+                    content.className = 'text-slate-800';
+                    content.textContent = text;
+
+                    li.appendChild(badge);
+                    li.appendChild(content);
+                    list.appendChild(li);
+                });
+                container.replaceChildren(list);
+                return;
+            }
+
+            const list = document.createElement('ul');
+            list.className = 'space-y-2';
             items.forEach(text => {
-                const p = document.createElement('p');
-                p.textContent = text;
-                list.appendChild(p);
+                const li = document.createElement('li');
+                li.className = 'flex items-start gap-2 text-slate-800';
+                const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                icon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                icon.setAttribute('viewBox', '0 0 24 24');
+                icon.setAttribute('fill', 'none');
+                icon.setAttribute('stroke', 'currentColor');
+                icon.setAttribute('stroke-width', '2');
+                icon.classList.add('mt-1', 'h-4', 'w-4', 'text-brand-600');
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('stroke-linecap', 'round');
+                path.setAttribute('stroke-linejoin', 'round');
+                path.setAttribute('d', 'm9 5 7 7-7 7');
+                icon.appendChild(path);
+                const content = document.createElement('span');
+                content.textContent = text;
+                li.appendChild(icon);
+                li.appendChild(content);
+                list.appendChild(li);
             });
             container.replaceChildren(list);
         }
@@ -212,6 +221,10 @@
 
             panelTitle.textContent = error.title || error.label || 'Erreur';
             panelLabel.textContent = manufacturer.name + ' • ' + (error.label || '');
+            const badge = document.getElementById('panelBadge');
+            if (badge) {
+                badge.textContent = error.label ? `Code ${error.label}` : 'Code';
+            }
             renderList(error.description, panelDescription, false);
             renderList(error.process, panelProcess, true);
             errorPanel.classList.remove('hidden');

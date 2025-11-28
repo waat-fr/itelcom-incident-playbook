@@ -7,8 +7,31 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+*.tmp
+
+# Node / tooling
+node_modules/
+dist/
+build/
+.parcel-cache/
+.cache/
+
+# Env / secrets
+.env
+.env.*
+
+# Dependency / package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.bundle/
+vendor/
 
 # Specific ignore for GitHub Pages
 # GitHub Pages will always use its own deployed version of pages-gem 
